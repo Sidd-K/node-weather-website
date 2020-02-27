@@ -1,5 +1,6 @@
 console.log('CLient side JS file');
 
+
 const weatherForm = document.querySelector('form');
 const serachElement = document.querySelector('input');
 const messageOne = document.querySelector('#message-1')
