@@ -13,7 +13,7 @@ const forecast = ((lat,long, callback) => {
                 rainPrecip : response.body.currently.precipProbability,
                 summary :  response.body.daily.data[0].summary
             }
-            callback('',data.summary + ' Temperature for today is '+ data.temp + ' with rain probability of ' + data.rainPrecip + ' %');
+            callback('',data.summary + ' It is currently '+ data.temp + ' degrees out. The high today is ' + response.body.daily.data[0].temperatureHigh + ' with low of '+ response.body.daily.data[0].temperatureLow  + '. There is a rain probability of ' + data.rainPrecip + ' %');
         }
     });
 });
